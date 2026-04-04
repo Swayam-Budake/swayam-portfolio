@@ -101,7 +101,7 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.6 }}
               >
-                things happen
+                makes things happen
               </motion.span>
               .
             </h2>
