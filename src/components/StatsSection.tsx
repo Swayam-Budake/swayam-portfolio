@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
-import salgar1 from "@/assets/marquee-1.jpeg";
-import salgar2 from "@/assets/marquee-2.jpeg";
-import salgar3 from "@/assets/marquee-3.jpeg";
 import newImg1 from "@/assets/marquee-new-1.jpeg";
 import newImg2 from "@/assets/marquee-new-2.jpeg";
 import newImg3 from "@/assets/marquee-new-3.jpeg";
 import newImg4 from "@/assets/marquee-new-4.jpeg";
 import newImg5 from "@/assets/marquee-new-5.jpeg";
 
-const images = [salgar1, salgar2, salgar3, newImg1, newImg2, newImg3, newImg4, newImg5];
+const images = [newImg1, newImg2, newImg3, newImg4, newImg5];
 
 const StatsSection = () => {
   return (
