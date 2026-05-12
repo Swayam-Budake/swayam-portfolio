@@ -67,10 +67,11 @@ const GoogleIcon = () => {
 const AboutScene = () => (
   <div className="absolute inset-0 z-0 pointer-events-none">
     <Canvas camera={{ position: [0, 0, 4], fov: 45 }} dpr={[1, 1.5]}>
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[3, 3, 5]} intensity={0.6} color="#fff0e0" />
-      <pointLight position={[-2, -2, 2]} intensity={0.4} color="#1877F2" />
-      <pointLight position={[2, 1, 1]} intensity={0.3} color="#EA4335" />
+      <ambientLight intensity={1.1} />
+      <directionalLight position={[3, 3, 5]} intensity={1.5} color="#fff0e0" />
+      <directionalLight position={[-4, 2, 4]} intensity={1.0} color="#ffffff" />
+      <pointLight position={[-2, -2, 2]} intensity={1.2} color="#1877F2" />
+      <pointLight position={[2, 1, 1]} intensity={1.0} color="#EA4335" />
       <FacebookIcon />
       <GoogleIcon />
     </Canvas>
