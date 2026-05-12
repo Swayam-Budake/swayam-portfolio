@@ -100,11 +100,12 @@ const SnapchatIcon = () => {
 const WorkScene = () => (
   <div className="absolute inset-0 z-0 pointer-events-none opacity-60">
     <Canvas camera={{ position: [0, 0, 5], fov: 45 }} dpr={[1, 1.5]}>
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[5, 3, 5]} intensity={0.6} color="#fff0e0" />
-      <pointLight position={[-3, 2, 2]} intensity={0.4} color="#FE2C55" />
-      <pointLight position={[3, -2, 1]} intensity={0.3} color="#E60023" />
-      <pointLight position={[0, 0, 3]} intensity={0.2} color="#FFFC00" />
+      <ambientLight intensity={1.1} />
+      <directionalLight position={[5, 3, 5]} intensity={1.5} color="#fff0e0" />
+      <directionalLight position={[-5, 2, 4]} intensity={1.0} color="#ffffff" />
+      <pointLight position={[-3, 2, 2]} intensity={1.2} color="#FE2C55" />
+      <pointLight position={[3, -2, 1]} intensity={1.0} color="#E60023" />
+      <pointLight position={[0, 0, 3]} intensity={0.8} color="#FFFC00" />
       <TikTokIcon />
       <PinterestIcon />
       <SnapchatIcon />

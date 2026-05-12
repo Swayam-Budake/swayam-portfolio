@@ -95,11 +95,12 @@ const DiscordIcon = () => {
 const ContactScene = () => (
   <div className="absolute inset-0 z-0 pointer-events-none opacity-50">
     <Canvas camera={{ position: [0, 0, 5], fov: 50 }} dpr={[1, 1.5]}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[3, 5, 5]} intensity={0.5} color="#fff0e0" />
-      <pointLight position={[-2, -1, 3]} intensity={0.5} color="#25D366" />
-      <pointLight position={[2, 2, -1]} intensity={0.3} color="#5865F2" />
-      <pointLight position={[0, -2, 2]} intensity={0.2} color="#0088CC" />
+      <ambientLight intensity={1.1} />
+      <directionalLight position={[3, 5, 5]} intensity={1.5} color="#fff0e0" />
+      <directionalLight position={[-4, 3, 4]} intensity={1.0} color="#ffffff" />
+      <pointLight position={[-2, -1, 3]} intensity={1.3} color="#25D366" />
+      <pointLight position={[2, 2, -1]} intensity={1.0} color="#5865F2" />
+      <pointLight position={[0, -2, 2]} intensity={0.8} color="#0088CC" />
       <WhatsAppIcon />
       <TelegramIcon />
       <DiscordIcon />

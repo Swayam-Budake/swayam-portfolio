@@ -50,8 +50,8 @@ const StatsSection = () => {
       </div>
 
       {/* Marquee */}
-      <div className="relative overflow-hidden group">
-        <div className="flex animate-marquee group-hover:[animation-play-state:paused]">
+      <div className="relative overflow-hidden">
+        <div className="flex animate-marquee">
           {[...images, ...images].map((src, i) => (
             <div key={i} className="flex-shrink-0 px-3">
               <img
