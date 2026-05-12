@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: "Event Brand Content Strategy — Sitara Events",
-    desc: "Created content ideas, captions and image prompts tailored to an event company's audience — helping them communicate their brand story consistently across social media.",
+    desc: "Created content ideas, captions and image prompts tailored to an event company's audience helping them communicate their brand story consistently across social media.",
     tags: ["Content Strategy", "Event Marketing", "Copywriting", "Creative Direction"],
     metric: "Multi-Platform Content",
   },
