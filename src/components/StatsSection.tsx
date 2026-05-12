@@ -35,13 +35,13 @@ const StatsSection = () => {
           />
           <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4">Design Work</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            I don't just strategize —{" "}
+            I don't just strategize &nbsp;{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               I create.
             </span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
-            From social media graphics to branded content, I design visuals that stop the scroll. Every post you see below was made for a real client — because great marketing needs great creative.
+            From social media graphics to branded content, I design visuals that stop the scroll. Every post you see below was made for a real client because great marketing needs great creative.
           </p>
         </motion.div>
       </div>

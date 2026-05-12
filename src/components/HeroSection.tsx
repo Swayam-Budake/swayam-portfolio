@@ -107,7 +107,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed mb-10"
         >
-          From <strong className="text-primary font-semibold">SEO and paid ads</strong> to <strong className="text-primary font-semibold">creative strategy and social media</strong> — I bring both the data and the ideas.
+          From <strong className="text-primary font-semibold">SEO and paid ads</strong> to <strong className="text-primary font-semibold">creative strategy and social media</strong>&nbsp; I bring both the data and the ideas.
           I've worked with <strong className="text-primary font-semibold">real brands</strong>, run <strong className="text-primary font-semibold">real campaigns</strong>, and delivered <strong className="text-primary font-semibold">real results</strong>.
           I don't just run campaigns. I build <strong className="text-primary font-semibold">strategies that rank, convert, and stick</strong>.
         </motion.p>

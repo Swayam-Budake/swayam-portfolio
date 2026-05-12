@@ -113,7 +113,7 @@ const AboutSection = () => {
               transition={{ delay: 0.3, duration: 0.7 }}
               className="text-muted-foreground text-lg leading-relaxed mb-4"
             >
-              I've helped <strong className="text-primary font-semibold">real brands grow</strong> — from improving <strong className="text-primary font-semibold">search visibility</strong> for an FMCG company to building <strong className="text-primary font-semibold">social strategies</strong> that actually convert. I work at the intersection of <strong className="text-primary font-semibold">data and creativity</strong>, which means campaigns that look good and perform.
+              I've helped <strong className="text-primary font-semibold">real brands grow</strong>&nbsp; from improving <strong className="text-primary font-semibold">search visibility</strong> for an FMCG company to building <strong className="text-primary font-semibold">social strategies</strong> that actually convert. I work at the intersection of <strong className="text-primary font-semibold">data and creativity</strong>, which means campaigns that look good and perform.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
