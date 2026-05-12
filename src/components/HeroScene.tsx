@@ -157,11 +157,12 @@ const SocialParticles = () => {
 const HeroScene = () => (
   <div className="absolute inset-0 z-0">
     <Canvas camera={{ position: [0, 0, 5], fov: 50 }} dpr={[1, 1.5]}>
-      <ambientLight intensity={0.35} />
-      <directionalLight position={[5, 5, 5]} intensity={0.8} color="#fff0e0" />
-      <pointLight position={[-3, -3, 2]} intensity={0.5} color="#E1306C" />
-      <pointLight position={[3, 2, -2]} intensity={0.4} color="#1DA1F2" />
-      <pointLight position={[0, -2, 3]} intensity={0.3} color="#0A66C2" />
+      <ambientLight intensity={1.1} />
+      <directionalLight position={[5, 5, 5]} intensity={1.6} color="#fff0e0" />
+      <directionalLight position={[-5, 3, 4]} intensity={1.0} color="#ffffff" />
+      <pointLight position={[-3, -3, 2]} intensity={1.2} color="#E1306C" />
+      <pointLight position={[3, 2, -2]} intensity={1.0} color="#1DA1F2" />
+      <pointLight position={[0, -2, 3]} intensity={0.9} color="#0A66C2" />
       <InstagramIcon />
       <YouTubeIcon />
       <TwitterIcon />
