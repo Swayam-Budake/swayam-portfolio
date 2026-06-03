@@ -82,7 +82,7 @@ const HeroSection = () => {
               initial={{ y: 120, rotateX: 40 }}
               animate={{ y: 0, rotateX: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]"
+              className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] break-words"
             >
               Swayam
             </motion.h1>
@@ -92,7 +92,7 @@ const HeroSection = () => {
               initial={{ y: 120, rotateX: 40 }}
               animate={{ y: 0, rotateX: 0 }}
               transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="block text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]"
+              className="block text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] break-words"
             >
               <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">
                 Budake
