@@ -9,19 +9,19 @@ const projects = [
     title: "Social Media Creative Strategy — 2Stories",
     desc: "Developed content ideas, captions, image prompts and a full content calendar to build a consistent and engaging social media presence for a bar and restaurant brand.",
     tags: ["Content Strategy", "Content Calendar", "Copywriting", "Creative Direction"],
-    metric: "4-Week Content Calendar",
+    metric: "28 Posts Planned",
   },
   {
     title: "Event Brand Content Strategy — Sitara Events",
     desc: "Created content ideas, captions and image prompts tailored to an event company's audience helping them communicate their brand story consistently across social media.",
     tags: ["Content Strategy", "Event Marketing", "Copywriting", "Creative Direction"],
-    metric: "Multi-Platform Content",
+    metric: "Multi-Platform Strategy",
   },
   {
     title: "Club & Lifestyle Content — CRCC Club Sangli",
     desc: "Built a content calendar with creative post ideas, captions and image prompts to help a club brand maintain an active and on-brand social media presence.",
     tags: ["Content Calendar", "Lifestyle Marketing", "Copywriting", "Creative Direction"],
-    metric: "Consistent Brand Voice",
+    metric: "Consistent Brand Voice Delivered",
   },
 ];
 
