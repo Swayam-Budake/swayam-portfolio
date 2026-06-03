@@ -12,15 +12,15 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Hero — Swayam Budake Digital Marketing Expert">
-      {/* 3D Scene */}
-      <div className="absolute right-0 top-0 w-full lg:w-3/5 h-full opacity-80">
+      {/* 3D Scene - hidden on mobile, right half on desktop */}
+      <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full opacity-70 pointer-events-none">
         <Suspense fallback={null}>
           <HeroScene />
         </Suspense>
       </div>
 
-      {/* Moody gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent pointer-events-none z-[1]" />
+      {/* Moody gradient overlays - stronger to keep text readable */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 lg:via-background/80 to-background/40 pointer-events-none z-[1]" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none z-[1]" />
 
       {/* Glow orbs */}
@@ -82,7 +82,7 @@ const HeroSection = () => {
               initial={{ y: 120, rotateX: 40 }}
               animate={{ y: 0, rotateX: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]"
+              className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] break-words"
             >
               Swayam
             </motion.h1>
@@ -92,7 +92,7 @@ const HeroSection = () => {
               initial={{ y: 120, rotateX: 40 }}
               animate={{ y: 0, rotateX: 0 }}
               transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="block text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9]"
+              className="block text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] break-words"
             >
               <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">
                 Budake

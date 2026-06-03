@@ -97,7 +97,7 @@ const ContactSection = () => {
             transition={{ delay: 0.4 }}
             className="text-muted-foreground text-lg max-w-lg mx-auto mb-12"
           >
-            Whether you need a full digital marketing strategy, SEO audit, social media management, or help scaling your Google Ads campaigns I'd love to hear about your goals.
+            I'm currently open to freelance projects and full-time roles in digital marketing. If you have a brand that needs sharper content, better strategy, or stronger ads — let's talk.
           </motion.p>
 
           <motion.a
