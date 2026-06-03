@@ -5,7 +5,13 @@ const items = [
   {
     icon: Briefcase,
     label: "Experience",
-    title: "Creative Strategist",
+    title: "Digital Marketing",
+    detail: "Salgar Foods Pvt Ltd",
+  },
+  {
+    icon: Briefcase,
+    label: "Experience",
+    title: "Content Strategist Intern",
     detail: "Hexnsmedia",
   },
   {
