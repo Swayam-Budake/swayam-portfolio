@@ -5,7 +5,7 @@ const items = [
   {
     icon: Briefcase,
     label: "Experience",
-    title: "Digital Marketing",
+    title: "Digital Marketing Intern",
     detail: "Salgar Foods Pvt Ltd",
   },
   {
