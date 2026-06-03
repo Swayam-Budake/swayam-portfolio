@@ -12,15 +12,15 @@ const HeroSection = () => {
 
   return (
     <section ref={ref} className="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Hero — Swayam Budake Digital Marketing Expert">
-      {/* 3D Scene */}
-      <div className="absolute right-0 top-0 w-full lg:w-3/5 h-full opacity-80">
+      {/* 3D Scene - hidden on mobile, right half on desktop */}
+      <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full opacity-70 pointer-events-none">
         <Suspense fallback={null}>
           <HeroScene />
         </Suspense>
       </div>
 
-      {/* Moody gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent pointer-events-none z-[1]" />
+      {/* Moody gradient overlays - stronger to keep text readable */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 lg:via-background/80 to-background/40 pointer-events-none z-[1]" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none z-[1]" />
 
       {/* Glow orbs */}
