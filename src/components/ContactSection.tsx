@@ -97,7 +97,7 @@ const ContactSection = () => {
             transition={{ delay: 0.4 }}
             className="text-muted-foreground text-lg max-w-lg mx-auto mb-12"
           >
-            I'm currently open to freelance projects and full-time roles in digital marketing. If you have a brand that needs sharper content, better strategy, or stronger ads — let's talk.
+            I'm open to remote-first and international roles in marketing automation and growth marketing, as well as freelance projects spanning AI workflows, Meta Ads, social strategy and brand creative.
           </motion.p>
 
           <motion.a

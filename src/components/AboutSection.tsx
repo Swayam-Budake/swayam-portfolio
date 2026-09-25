@@ -1,13 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { TrendingUp, Target, Megaphone, Brain } from "lucide-react";
+import { Bot, Palette, Target, Workflow } from "lucide-react";
 import { useRef, lazy, Suspense } from "react";
 const AboutScene = lazy(() => import("./AboutScene"));
 
 const skills = [
-  { icon: TrendingUp, label: "SEO & SEM", desc: "I turn searches into traffic\nOn-page SEO, keyword strategy & paid search built to rank, get clicked, and convert." },
-  { icon: Target, label: "Performance Marketing", desc: "I make every rupee perform\nMeta ad campaigns, audience targeting & sponsored content  built to drive real results, not just impressions." },
-  { icon: Megaphone, label: "Social Media & Branding", desc: "I build brands people remember\nScroll-stopping content and consistent brand voice across Instagram, LinkedIn & beyond." },
-  { icon: Brain, label: " Creative Strategy", desc: " shape ideas into impact\nBrand positioning, campaign concepts & content direction  turning briefs into work that resonates." },
+  { icon: Workflow, label: "AI Automation", desc: "I build connected marketing systems\nn8n and Pabbly workflows for WhatsApp, CRM follow-ups, voice calls, chatbots and reporting." },
+  { icon: Target, label: "Growth Marketing", desc: "I turn campaigns into pipelines\nMeta Ads, audience strategy and performance-led execution built around business goals." },
+  { icon: Bot, label: "CRM & Conversational AI", desc: "I keep every lead moving\nZoho CRM automation, Claude API chatbots, DoubleTick workflows and Bolna AI voice calling." },
+  { icon: Palette, label: "Digital & Creative", desc: "I make brands clear and consistent\nSocial content strategy, campaign creatives and brand graphics for FMCG, events and hospitality." },
 ];
 
 const SkillCard = ({ skill, i }: { skill: typeof skills[0]; i: number }) => (
@@ -91,17 +91,17 @@ const AboutSection = () => {
               transition={{ duration: 1 }}
               className="h-[2px] bg-gradient-to-r from-primary to-secondary mb-5"
             />
-            <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4">About</p>
+            <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4">About & Services</p>
 
             <h2 id="about-heading" className="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
-              Digital marketing that{" "}
+              I build systems that{" "}
               <motion.span
                 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent inline-block"
                 whileInView={{ scale: [1, 1.08, 1] }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.6 }}
               >
-                makes things happen
+                turn activity into growth
               </motion.span>
               .
             </h2>
@@ -113,7 +113,7 @@ const AboutSection = () => {
               transition={{ delay: 0.3, duration: 0.7 }}
               className="text-muted-foreground text-lg leading-relaxed mb-4"
             >
-              I've helped <strong className="text-primary font-semibold">real brands grow</strong>&nbsp; from improving <strong className="text-primary font-semibold">search visibility</strong> for an FMCG company to building <strong className="text-primary font-semibold">social strategies</strong> that actually convert. I work at the intersection of <strong className="text-primary font-semibold">data and creativity</strong>, which means campaigns that look good and perform.
+              I'm a <strong className="text-primary font-semibold">Growth & Automation Specialist</strong> who builds AI-powered marketing systems, not just campaigns. Over the past year, I've designed and shipped <strong className="text-primary font-semibold">7+ end-to-end workflows</strong> using n8n and Pabbly Connect, including WhatsApp reply logging, CRM-triggered voice calling, a Claude API website chatbot and automated daily reporting.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -122,7 +122,7 @@ const AboutSection = () => {
               transition={{ delay: 0.45, duration: 0.7 }}
               className="text-muted-foreground leading-relaxed text-lg"
             >
-              From <strong className="text-primary font-semibold">performance marketing</strong> to <strong className="text-primary font-semibold">creative strategy</strong>, I bring both execution and big-picture thinking to the table whether it's a startup finding its voice or a brand <strong className="text-primary font-semibold">scaling its reach</strong>.
+              Alongside automation, I run <strong className="text-primary font-semibold">Meta Ads hiring campaigns</strong>, manage CRM workflows and bring agency experience across social media, creative strategy and paid ads for FMCG, events and hospitality. I'm completing a BBA in Digital Marketing at Poornima University and am open to remote-first and international roles in marketing automation and growth marketing.
             </motion.p>
           </motion.div>
 
