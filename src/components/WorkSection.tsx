@@ -6,22 +6,22 @@ const WorkScene = lazy(() => import("./WorkScene"));
 
 const projects = [
   {
-    title: "Social Media Creative Strategy — 2Stories",
-    desc: "Developed content ideas, captions, image prompts and a full content calendar to build a consistent and engaging social media presence for a bar and restaurant brand.",
-    tags: ["Content Strategy", "Content Calendar", "Copywriting", "Creative Direction"],
-    metric: "28 Posts Planned",
+    title: "AI-Powered WhatsApp Automation",
+    desc: "Built an automated system that logs DoubleTick client reply data into Google Sheets through DoubleTick Bot Studio, enabling real-time visibility into customer conversations without manual entry.",
+    tags: ["DoubleTick", "Google Sheets", "Workflow Automation"],
+    metric: "Real-Time Reply Logging",
   },
   {
-    title: "Event Brand Content Strategy — Sitara Events",
-    desc: "Created content ideas, captions and image prompts tailored to an event company's audience helping them communicate their brand story consistently across social media.",
-    tags: ["Content Strategy", "Event Marketing", "Copywriting", "Creative Direction"],
-    metric: "Multi-Platform Strategy",
+    title: "Automated Daily Reporting System",
+    desc: "Created a daily email summary workflow using Claude API and DoubleTick integration through n8n, removing repetitive reporting work and keeping updates consistent.",
+    tags: ["n8n", "DoubleTick", "Claude API"],
+    metric: "Daily Reports Automated",
   },
   {
-    title: "Club & Lifestyle Content — CRCC Club Sangli",
-    desc: "Built a content calendar with creative post ideas, captions and image prompts to help a club brand maintain an active and on-brand social media presence.",
-    tags: ["Content Calendar", "Lifestyle Marketing", "Copywriting", "Creative Direction"],
-    metric: "Consistent Brand Voice Delivered",
+    title: "CRM-Triggered Voice Calling System",
+    desc: "Connected Zoho CRM records to Bolna AI through an automated workflow that triggers AI voice calls from CRM activity, reducing manual outreach effort.",
+    tags: ["Zoho CRM", "Bolna AI", "AI Voice Automation"],
+    metric: "Automated Voice Outreach",
   },
 ];
 
@@ -147,11 +147,11 @@ const WorkSection = () => {
             transition={{ duration: 1 }}
             className="h-[2px] bg-gradient-to-r from-primary to-secondary mb-5"
           />
-          <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4">Portfolio</p>
+          <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4">Automation Projects</p>
           <h2 id="work-heading" className="text-4xl md:text-5xl font-bold tracking-tight mb-14">
-            Real Clients.{" "}
+            Systems built to{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Real Work.
+              remove manual work.
             </span>
           </h2>
         </motion.div>

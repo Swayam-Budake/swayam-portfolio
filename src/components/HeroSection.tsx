@@ -11,7 +11,7 @@ const HeroSection = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Hero — Swayam Budake Digital Marketing Expert">
+    <section ref={ref} className="relative min-h-screen flex flex-col justify-center overflow-hidden" aria-label="Swayam Budake — Digital Marketing and AI Automation">
       {/* 3D Scene - hidden on mobile, right half on desktop */}
       <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full opacity-70 pointer-events-none">
         <Suspense fallback={null}>
@@ -71,8 +71,8 @@ const HeroSection = () => {
             animate={{ width: 50 }}
             transition={{ duration: 1, delay: 0.3 }}
           />
-          <p className="text-primary font-medium tracking-[0.3em] uppercase text-xs">
-            Digital Marketing Professional
+          <p className="text-primary font-medium tracking-[0.22em] uppercase text-xs">
+            Digital Marketing × AI Automation
           </p>
         </motion.div>
 
@@ -105,11 +105,18 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed mb-10"
+          className="text-muted-foreground text-base md:text-lg max-w-2xl leading-relaxed mb-4"
         >
-          From <strong className="text-primary font-semibold">SEO and paid ads</strong> to <strong className="text-primary font-semibold">creative strategy and social media</strong>&nbsp; I bring both the data and the ideas.
-          I've worked with <strong className="text-primary font-semibold">real brands</strong>, run <strong className="text-primary font-semibold">real campaigns</strong>, and delivered <strong className="text-primary font-semibold">real results</strong>.
-          I don't just run campaigns. I build <strong className="text-primary font-semibold">strategies that rank, convert, and stick</strong>.
+          Digital Marketing & Automation Executive building <strong className="text-primary font-semibold">AI-powered marketing systems</strong> with n8n, Claude API, DoubleTick and voice automation, alongside <strong className="text-primary font-semibold">paid ads and growth marketing</strong>.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-sm text-muted-foreground mb-8"
+        >
+          Greater Jaipur Area · Open to remote-first and international roles
         </motion.p>
 
         <motion.div
