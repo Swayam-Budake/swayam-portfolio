@@ -124,6 +124,20 @@ const AboutSection = () => {
             >
               Alongside automation, I run <strong className="text-primary font-semibold">Meta Ads hiring campaigns</strong>, manage CRM workflows and bring agency experience across social media, creative strategy and paid ads for FMCG, events and hospitality. I'm completing a BBA in Digital Marketing at Poornima University and am open to remote-first and international roles in marketing automation and growth marketing.
             </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6, duration: 0.7 }}
+              className="flex flex-wrap gap-2 mt-7"
+              aria-label="Technical skills"
+            >
+              {["Meta/Google Ads", "Content Writing", "Blog Creation", "SEO", "SMM", "Graphic Design", "Editing"].map((skill) => (
+                <span key={skill} className="text-xs md:text-sm px-3.5 py-1.5 rounded-full border border-border bg-card text-foreground/90">
+                  {skill}
+                </span>
+              ))}
+            </motion.div>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-4" style={{ perspective: "1200px" }}>

@@ -16,18 +16,42 @@ const roles = [
     tools: "n8n · Pabbly Connect · Zoho CRM · DoubleTick · Bolna AI · Claude API · Meta Ads Manager · Canva",
   },
   {
-    title: "Digital Marketing Intern",
-    company: "Salgar Foods Pvt. Ltd.",
-    period: "May 2025–Jul 2025",
+    title: "Content Strategist Intern",
+    company: "Hexnsmedia",
+    period: "Dec 2025–May 2026",
     location: "Kolhapur, Maharashtra · On-site",
     points: [
-      "Executed on-page and off-page SEO, keyword research and competitor analysis.",
-      "Created, scheduled and managed social media content across platforms.",
-      "Designed campaign creatives and short-form product promotion videos.",
-      "Supported digital campaigns aligned with business goals.",
+      "Developed and wrote content for static posts, carousel posts, posters, flyers, billboards and standees across 5+ client accounts spanning F&B, hospitality, nightlife and events industries.",
+      "Leveraged AI tools (ChatGPT, Claude, Microsoft Copilot) to accelerate content ideation, copywriting and creative production workflows.",
+      "Collaborated on multi-format visual content strategies tailored to each brand's tone, audience and platform requirements.",
+      "Managed simultaneous content deliverables for diverse clients including restaurants, bars, clubs, packaged food brands and event organisers.",
     ],
-    tools: "SEO · Social Media · Content Creation · Campaign Planning",
+    tools: "Canva · Adobe Illustrator · ChatGPT · Claude · Microsoft Copilot",
   },
+  {
+    title: "Digital Marketing Intern",
+    company: "Salgar Foods and Beverages Pvt. Ltd.",
+    period: "May 2025–Aug 2025",
+    location: "Kolhapur, Maharashtra · On-site",
+    points: [
+      "Designed and ran Meta ad campaigns to optimize reach and engagement.",
+      "Created graphics for social media and promotions using Canva and Adobe Illustrator.",
+      "Drafted and published blog posts aligned to brand voice and SEO strategy.",
+      "Assisted in lead generation initiatives and customer acquisition.",
+    ],
+    tools: "Meta Ads · Canva · Adobe Illustrator · Blogging & SEO · Lead Generation",
+  },
+];
+
+const certifications = [
+  "Google Ads Campaign",
+  "SEO Essentials with SEMrush",
+  "Search Engine Optimization",
+  "Social Media Marketing",
+  "Canva Essentials",
+  "Graphic Designing Essentials",
+  "Omni-Channel Marketing (Job Simulation)",
+  "MS Excel Advanced Training",
 ];
 
 const CredentialsSection = () => (
@@ -96,17 +120,47 @@ const CredentialsSection = () => (
         ))}
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-5 mt-5">
-        {[
-          { icon: Briefcase, label: "Earlier experience", title: "Content Strategist Intern", detail: "Hexnsmedia" },
-          { icon: GraduationCap, label: "Education", title: "BBA Digital Marketing", detail: "Poornima University · In progress" },
-          { icon: Award, label: "Certifications", title: "Google, Meta & HubSpot", detail: "SEMrush, Canva & Microsoft" },
-        ].map((item, i) => (
-          <motion.article key={item.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 + i * 0.1 }} className="bg-card border border-border rounded-2xl p-5 flex items-start gap-4">
-            <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center"><item.icon className="w-5 h-5 text-primary" aria-hidden="true" /></div>
-            <div className="min-w-0"><p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-1">{item.label}</p><h3 className="font-semibold leading-snug">{item.title}</h3><p className="text-sm text-muted-foreground mt-1">{item.detail}</p></div>
-          </motion.article>
-        ))}
+      <div className="grid md:grid-cols-2 gap-5 mt-5">
+        <motion.article
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.15 }}
+          className="bg-card border border-border rounded-2xl p-5 flex items-start gap-4"
+        >
+          <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+            <GraduationCap className="w-5 h-5 text-primary" aria-hidden="true" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-1">Education</p>
+            <h3 className="font-semibold leading-snug">BBA Digital Marketing</h3>
+            <p className="text-sm text-muted-foreground mt-1">Poornima University · In progress</p>
+          </div>
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.25 }}
+          className="bg-card border border-border rounded-2xl p-5"
+        >
+          <div className="flex items-start gap-4 mb-4">
+            <div className="w-10 h-10 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+              <Award className="w-5 h-5 text-primary" aria-hidden="true" />
+            </div>
+            <div className="min-w-0">
+              <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mb-1">Certifications</p>
+              <h3 className="font-semibold leading-snug">Google · SEMrush · Canva · Microsoft</h3>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {certifications.map((cert) => (
+              <span key={cert} className="text-xs px-3 py-1.5 rounded-full border border-border bg-primary/5 text-muted-foreground">
+                {cert}
+              </span>
+            ))}
+          </div>
+        </motion.article>
       </div>
     </div>
   </section>
