@@ -1,8 +1,9 @@
 # Roadmap
 
-- [x] Update hero positioning, title, and location
-- [x] Refresh About copy and service cards
-- [x] Expand experience timeline with current and earlier roles
-- [x] Replace project cards with AI automation projects
-- [x] Align contact wording and search metadata
-- [x] Verify desktop/mobile layout, links, and errors
+- [ ] Reposition hero, stat strip, and search metadata around Meta Ads and content
+- [ ] Add Meta Ads campaign cards, supplied totals, and factual metric tests
+- [ ] Preserve the design carousel and add client labels
+- [ ] Move education and certifications into About; refresh services and skills
+- [ ] Remove Experience and demote automation projects to a compact strip
+- [ ] Update contact links, résumé download, mobile scenes, and reduced-motion behavior
+- [ ] Verify campaign figures and desktop/mobile rendering

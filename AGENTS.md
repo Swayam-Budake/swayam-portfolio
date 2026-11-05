@@ -1,0 +1,1 @@
+Store campaign metrics in a dedicated data module and render them in their own section; test user-supplied figures to prevent accidental drift.
