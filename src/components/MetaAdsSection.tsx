@@ -80,7 +80,7 @@ const MetaAdsSection = () => (
               ))}
               <tr className="border-t border-primary/40 bg-primary/5 font-semibold">
                 <th scope="row" className="px-4 py-3 text-foreground">Total</th>
-                <td className="px-4 py-3">{campaignTotals.spend}</td><td className="px-4 py-3">96,343*</td>
+                <td className="px-4 py-3">{campaignTotals.spend}</td><td className="px-4 py-3">—</td>
                 <td className="px-4 py-3">{campaignTotals.impressions}</td><td className="px-4 py-3">{campaignTotals.interactions} interactions<br />{campaignTotals.linkClicks} link clicks</td>
                 <td className="px-4 py-3">—</td>
               </tr>

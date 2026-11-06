@@ -13,6 +13,7 @@ describe("Meta Ads campaign figures", () => {
       ["6,634", "₹0.32", "34,063", "80,636", "₹2,119", "8.2%"],
       ["910", "₹1.93", "2.5%", "37,799", "1.1", "₹1,754"],
     ]);
+    expect(metaCampaigns[2]?.table.impressions).toBe("Not reported");
     expect(campaignTotals).toEqual({
       spend: "₹5,340",
       impressions: "173,210",

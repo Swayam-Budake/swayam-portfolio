@@ -88,7 +88,7 @@ export const metaCampaigns: MetaCampaign[] = [
     table: {
       spend: "₹1,754",
       reach: "37,799",
-      impressions: "42,717*",
+      impressions: "Not reported",
       results: "910 link clicks",
       costPerResult: "₹1.93 / link click",
     },
