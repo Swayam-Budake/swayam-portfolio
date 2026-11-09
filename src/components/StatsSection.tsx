@@ -5,11 +5,17 @@ import newImg3 from "@/assets/marquee-new-3.jpeg";
 import newImg4 from "@/assets/marquee-new-4.jpeg";
 import newImg5 from "@/assets/marquee-new-5.jpeg";
 
-const images = [newImg1, newImg2, newImg3, newImg4, newImg5];
+const images = [
+  { src: newImg1, client: "2Stories" },
+  { src: newImg2, client: "2Stories" },
+  { src: newImg3, client: "CRCC Club Sangli" },
+  { src: newImg4, client: "CRCC Club Sangli" },
+  { src: newImg5, client: "Sitara Events" },
+];
 
 const StatsSection = () => {
   return (
-    <section className="py-24 px-6 md:px-16 lg:px-24 relative overflow-hidden" aria-label="Design work showcase">
+    <section id="design" className="py-24 px-6 md:px-16 lg:px-24 relative overflow-hidden" aria-label="Design work showcase">
       <motion.div
         className="absolute top-0 left-0 w-full h-[1px]"
         style={{ background: "linear-gradient(90deg, transparent, hsl(32 100% 55% / 0.3), hsl(260 60% 55% / 0.2), transparent)" }}
@@ -49,15 +55,16 @@ const StatsSection = () => {
       {/* Marquee */}
       <div className="relative overflow-hidden">
         <div className="flex animate-marquee">
-          {[...images, ...images].map((src, i) => (
-            <div key={i} className="flex-shrink-0 px-3">
+          {[...images, ...images].map((image, i) => (
+            <figure key={`${image.client}-${i}`} className="flex-shrink-0 px-3">
               <img
-                src={src}
-                alt={`Design work sample ${(i % images.length) + 1}`}
+                src={image.src}
+                alt={`${image.client} social media creative`}
                 className="h-[300px] w-auto rounded-xl object-cover"
                 loading="lazy"
               />
-            </div>
+              <figcaption className="pt-2 text-xs text-muted-foreground">{image.client}</figcaption>
+            </figure>
           ))}
         </div>
       </div>

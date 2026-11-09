@@ -1,15 +1,55 @@
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { animate, motion, useInView, useMotionValue, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { useRef, lazy, Suspense } from "react";
+import { useEffect, useRef, lazy, Suspense } from "react";
 
 const HeroScene = lazy(() => import("./HeroScene"));
 
 const results = [
-  { value: "₹1 Lakh+", label: "ad spend managed" },
-  { value: "1M+", label: "impressions delivered" },
-  { value: "50K+", label: "interactions generated" },
-  { value: "₹0.25", label: "lowest cost per interaction" },
+  { value: 1, prefix: "₹", suffix: " Lakh+", label: "ad spend managed" },
+  { value: 1, suffix: "M+", label: "impressions delivered" },
+  { value: 50, suffix: "K+", label: "interactions generated" },
+  { value: 0.25, prefix: "₹", decimals: 2, label: "lowest cost per interaction" },
 ];
+
+const CountUpStat = ({
+  value,
+  label,
+  prefix = "",
+  suffix = "",
+  decimals = 0,
+  reduceMotion,
+}: {
+  value: number;
+  label: string;
+  prefix?: string;
+  suffix?: string;
+  decimals?: number;
+  reduceMotion: boolean;
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, amount: 0.7 });
+  const count = useMotionValue(0);
+  const display = useTransform(count, (latest) =>
+    `${prefix}${new Intl.NumberFormat("en-IN", { maximumFractionDigits: decimals }).format(latest)}${suffix}`,
+  );
+
+  useEffect(() => {
+    if (!inView) return;
+    if (reduceMotion) {
+      count.set(value);
+      return;
+    }
+    const controls = animate(count, value, { duration: 1.4, ease: "easeOut" });
+    return () => controls.stop();
+  }, [count, inView, reduceMotion, value]);
+
+  return (
+    <div ref={ref}>
+      <motion.dd className="text-2xl md:text-3xl font-bold text-primary tabular-nums">{display}</motion.dd>
+      <dt className="mt-1 text-xs md:text-sm text-muted-foreground">{label}</dt>
+    </div>
+  );
+};
 
 const HeroSection = () => {
   const ref = useRef<HTMLElement>(null);
@@ -50,8 +90,7 @@ const HeroSection = () => {
         <dl className="mt-12 grid max-w-4xl grid-cols-2 lg:grid-cols-4 border-t border-border">
           {results.map((result) => (
             <div key={result.label} className="border-b border-border py-4 pr-4 lg:border-b-0 lg:py-5">
-              <dd className="text-2xl md:text-3xl font-bold text-primary tabular-nums">{result.value}</dd>
-              <dt className="mt-1 text-xs md:text-sm text-muted-foreground">{result.label}</dt>
+              <CountUpStat {...result} reduceMotion={Boolean(reduceMotion)} />
             </div>
           ))}
         </dl>
